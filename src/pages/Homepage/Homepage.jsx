@@ -3,6 +3,7 @@ import './Homepage.css'
 import hero1 from '../../assets/hero-1.webp';
 import hero2 from '../../assets/hero-2.webp';
 import hero3 from '../../assets/hero-3.webp';
+import { Link } from 'react-router-dom';
 
 const backgroundImages = [hero1, hero2, hero3];
 
@@ -31,6 +32,10 @@ const Home = () => {
     >
       <button className="arrow left" onClick={goToPrevious}>&#10094;</button>
       <button className="arrow right" onClick={goToNext}>&#10095;</button>
+      <div className="home-buttons">
+        <Link to="/about" className="home-btn">About Us</Link>
+        <Link to="/services" className="home-btn">Discover Our Services</Link>
+      </div>
     </div>
   );
 }
