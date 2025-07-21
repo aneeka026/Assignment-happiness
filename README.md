@@ -2,6 +2,7 @@
 A clean, responsive, and modern sample website built with React.js for a company called Happiness Plans. This site demonstrates frontend skills with routing, styled components, interactive UI, and a focus on user experience in the context of wellness and planning.
 
 ## Live link : 
+https://happiness-assessment.netlify.app/
 
 ## Preview 
 <img width="1435" height="778" alt="happy-1" src="https://github.com/user-attachments/assets/b2fdef77-e28d-49cf-9b9c-e8349f14a756" />
