@@ -1,0 +1,139 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 15px 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  header div {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2e8b57; 
+  }
+  
+  nav {
+    display: flex;
+    gap: 25px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  nav a::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #2e8b57;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+  }
+  
+  nav a:hover {
+    color: #2e8b57;
+  }
+  
+  nav a:hover::after {
+    width: 100%;
+  }
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff7f6;
+  padding: 12px 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 70px;
+  position: relative;
+  height: 150px;
+}
+
+.hamburger {
+  position: absolute;
+  left: 20px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 100px;
+  object-fit: contain;
+}
+
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -220px;
+  width: 200px;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: left 0.3s ease-in-out;
+  z-index: 1100;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.sidebar a:hover {
+  color: #2e8b57;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1050;
+}
+
+.navbar-line {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
